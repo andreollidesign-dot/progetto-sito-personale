@@ -1,0 +1,98 @@
+/* ===================================
+   6-PROGETTI.CSS
+   Stili specifici per progetti.html
+   =================================== */
+
+/* ========== MAIN PROGETTI ========== */
+
+.progetti-main {
+  padding: var(--spacing-3xl) var(--spacing-md) var(--spacing-xl);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.progetti-main h1 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.progetti-main p.intro {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.progetti-main p.intro2 {
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.progetti-grid h3 {
+  font-size: var(--font-size-xl);
+  line-height:1;
+}
+
+.progetti-grid p {
+  font-size: var(--font-size-base);
+  line-height:0;
+}
+
+/* ========== IMMAGINI PROGETTO ========== */
+
+.progetto-img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+/* ========== GRID PROGETTI ========== */
+
+.progetti-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  margin-top: 0;
+}
+
+/* MOBILE → 1 colonna */
+.progetto {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* ========== MEDIA QUERY - DESKTOP ========== */
+
+@media (min-width: 48em) {
+  .progetti-main {
+    padding: var(--spacing-3xl) var(--spacing-lg) var(--spacing-xl);
+  }
+
+  .progetti-main h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project img {
+    margin: var(--spacing-lg) 0;
+  }
+
+  .project-desc {
+    font-size: var(--font-size-base);
+  }
+
+  /* DESKTOP → 2 colonne */
+  .progetti-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}

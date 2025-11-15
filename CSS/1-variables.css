@@ -1,0 +1,57 @@
+/* ===================================
+   1-VARIABLES.CSS
+   Variabili globali usate in tutto il sito
+   =================================== */
+
+:root {
+  /* COLORI PRINCIPALI */
+  --color-primary: #912F47;
+  --color-primary-dark: #672132;
+  --color-accent: #C7BBCF;
+  --color-background: #F6F5F8;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* COLORI TESTO */
+  --color-text: #000000;
+  --color-text-muted: #6b6b6b;
+  
+  /* COLORI UI */
+  --color-footer-bg: #2C2E3A;
+  --color-border: #dddddd;
+  --color-border-dark: #bbbbbb;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* SPAZIATURE */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 80px;
+  --spacing-3xl: 112px;
+  
+  /* BORDER RADIUS */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  
+  /* TRANSIZIONI */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  
+  /* FONT */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-xs: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;        /* 16px */
+  --font-size-lg: 1.25rem;       /* 20px */
+  --font-size-xl: 1.5rem;        /* 24px */
+  --font-size-2xl: 2.125rem;     /* 34px */
+  --font-size-3xl: 2.5rem;       /* 40px */
+  
+  /* LAYOUT */
+  --container-max: 1200px;
+  --container-medium: 1100px;
+  --container-small: 600px;
+  --header-height: 80px;
+}

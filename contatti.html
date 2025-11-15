@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio di Greta Andreolli - UX/UI Designer. Design piacevole, usabile e accessibile.">
+  <title>Greta Andreolli – UX/UI Designer</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icone
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/1-variables.css">
+  <link rel="stylesheet" href="css/2-reset.css">
+  <link rel="stylesheet" href="css/3-base.css">
+  <link rel="stylesheet" href="css/4-layout.css">
+  <link rel="stylesheet" href="css/5-components.css">
+  <link rel="stylesheet" href="css/6-contatti.css">
+
+  <!-- Favicon -->
+  <!-- Favicon universale -->
+  <link rel="icon" href="PNG/farfalla-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="PNG/farfalla-48.png" sizes="48x48" type="image/png">
+
+  <!-- Apple Touch Icon (iOS e Safari macOS) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="PNG/farfalla-180.png">
+
+  <!-- Safari pinned tab (macOS) -->
+  <link rel="mask-icon" href="SVG/farfalla-mask.svg" color="#000000">
+
+  <!-- Template Loader -->
+  <script src="js/template.js" defer></script>
+
+</head>
+
+<body>
+  <!-- HEADER (caricato automaticamente) -->
+  <div id="header-placeholder"></div>
+
+  <!-- MAIN -->
+<main class="contatti">
+  <section class="form-section">
+    <h1>Contattami</h1>
+    <p>Per trovare soluzioni creative e funzionali adatte alle tue esigenze</p>
+
+  <form id="contact-form" action="https://formspree.io/f/mjkpnpzz" method="POST" class="contact-form">
+
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
+  </div>
+
+  <div class="form-group">
+    <label for="cognome">Cognome</label>
+    <input type="text" id="cognome" name="cognome" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="messaggio">Messaggio</label>
+    <textarea id="messaggio" name="messaggio" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-invia">Invia</button>
+  </form>
+
+  </section>
+
+</main>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const formMessage = document.getElementById('form-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    formMessage.textContent = "Invio in corso...";
+    formMessage.style.color = "#444";
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        formMessage.textContent = "✅ Messaggio inviato con successo!";
+        formMessage.style.color = "green";
+        form.reset();
+      } else {
+        throw new Error("Errore nell'invio");
+      }
+    } catch (error) {
+      formMessage.textContent = "❌ Si è verificato un errore. Riprova più tardi.";
+      formMessage.style.color = "red";
+    }
+  });
+</script>
+
+<!-- FOOTER (caricato automaticamente) -->
+  <div id="footer-placeholder"></div>
+  
+</body>
+</html>
