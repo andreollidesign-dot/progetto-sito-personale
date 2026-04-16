@@ -105,3 +105,71 @@ textarea {
 /* .Favicon {
   border-radius: var(--radius-md); 
 } */
+
+/* =====================================================
+   SELETTORE LINGUA  –  aggiungere a style.css,
+   progetti.css, iVegan.css, chi-sono.css, contatti.css
+   ===================================================== */
+
+/* Contenitore <li> nel menu */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 10px;
+}
+
+/* Ogni pulsante IT / EN / DE */
+.lang-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 4px 9px;
+  cursor: pointer;
+  color: #555;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  line-height: 1;
+}
+
+.lang-switcher {
+    padding: 8px 10px 16px;
+    border-top: 1px solid #eee;
+    margin-top: 4px;
+  }
+
+.lang-btn:hover {
+  background-color: #f0ecf1;
+  color: #912F47;
+}
+
+/* Pulsante della lingua attiva */
+.lang-btn--active {
+  background-color: #912F47;
+  color: #fff !important;
+  border-color: #912F47;
+}
+
+.lang-btn--active:hover {
+  background-color: #672132;
+  border-color: #672132;
+}
+
+/* ---- Desktop: stile inline nella navbar ---- */
+@media (min-width: 48em) {
+  .lang-switcher {
+    padding: 0 12px;
+    /* Allinea verticalmente come gli altri <li> */
+    height: 100%;
+    align-items: center;
+  }
+
+  .lang-switcher {
+    padding: 24px 12px;  /* stesso padding verticale dei <a> nella navbar */
+    float: left;         /* si comporta come gli altri <li> */
+    height: auto;        /* rimuove height: 100% che non funzionava */
+  }
+}
