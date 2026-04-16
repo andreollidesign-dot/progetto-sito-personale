@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO Base -->
   <meta name="description" content="Progetti di UX/UI Design di Greta Andreolli. Ogni progetto unisce competenze tecniche e sensibilità umana per creare esperienze significative.">
   <meta name="keywords" content="Progetti UX, Progetti UI, Portfolio Design, Case Study, iVegan Redesign">
   <meta name="author" content="Greta Andreolli">
-  
-  <!-- Meta Robots -->
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://andreollidesign-dot.github.io/progetto-sito-personale/progetti.html">
   <meta property="og:title" content="Progetti – Greta Andreolli UX/UI Designer">
@@ -22,21 +20,19 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="it_IT">
-  
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://andreollidesign-dot.github.io/progetto-sito-personale/progetti.html">
   <meta name="twitter:title" content="Progetti – Greta Andreolli UX/UI Designer">
   <meta name="twitter:description" content="Una selezione di progetti che raccontano il mio percorso come designer.">
   <meta name="twitter:image" content="https://andreollidesign-dot.github.io/progetto-sito-personale/PNG/Copertina-iVegan.png">
-  
-  <!-- LinkedIn specifico -->
+
   <meta property="og:site_name" content="Greta Andreolli Portfolio">
-  
   <title>Progetti – Greta Andreolli UX/UI Designer</title>
-  
-  <!-- Canonical URL -->
+
   <link rel="canonical" href="https://andreollidesign-dot.github.io/progetto-sito-personale/progetti.html">
+
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -49,16 +45,11 @@
   <link rel="stylesheet" href="CSS/6-progetti.css">
 
   <!-- Favicon -->
-  <!-- Favicon universale -->
   <link rel="icon" href="PNG/farfalla-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="PNG/farfalla-48.png" sizes="48x48" type="image/png">
-
-  <!-- Apple Touch Icon (iOS e Safari macOS) -->
   <link rel="apple-touch-icon" sizes="180x180" href="PNG/farfalla-180.png">
-
-  <!-- Safari pinned tab (macOS) -->
   <link rel="mask-icon" href="SVG/farfalla-mask.svg" color="#000000">
-  
+
   <!-- Template Loader -->
   <script src="js/template.js" defer></script>
 </head>
@@ -69,46 +60,50 @@
 
   <!-- MAIN -->
   <main class="progetti-main">
-    <h1>Progetti</h1>
+    <h1 data-i18n="proj_h1">Progetti</h1>
 
-    <p class="intro">
+    <p class="intro" data-i18n="proj_intro1">
       Ogni progetto è stato un laboratorio di crescita: un'occasione per unire competenze
       tecniche e sensibilità umana, sperimentando soluzioni sempre nuove per creare
       esperienze significative.
     </p>
-    <p class="intro2">
+    <p class="intro2" data-i18n="proj_intro2">
       Qui trovi una selezione di lavori che raccontano il mio percorso e il mio modo
       di pensare, osservare e progettare come designer.
     </p>
 
     <section class="progetti-grid">
+
       <a href="iVegan.html" class="progetto-link">
         <article class="progetto">
           <img src="PNG/Copertina-iVegan.png" alt="Copertina iVegan" class="progetto-img">
-          <h3>iVegan</h3>
-          <p>Re-design del sito iVegan.</p> 
+          <h3 data-i18n="proj1_title">iVegan</h3>
+          <p data-i18n="proj1_desc">Re-design del sito iVegan.</p>
         </article>
       </a>
 
-      <a href="autoservizi-andreolli.html" class="progetto-link">
+      <a href="Autoservizi-Andreolli.html" class="progetto-link">
         <article class="progetto">
           <img src="PNG/Copertina-Autoservizi-Andreolli.png" alt="Copertina Autoservizi Andreolli" class="progetto-img">
-          <h3>Autoservizi Andreolli</h3>
-          <p>Sito web per azienda di trasporti familiare</p>
+          <h3 data-i18n="proj2_title">Autoservizi Andreolli</h3>
+          <p data-i18n="proj2_desc">Sito web per azienda di trasporti familiare.</p>
         </article>
       </a>
 
-      <a href="rifugio-altissimo.html" class="progetto-link">
+      <a href="Rifugio-Altissimo.html" class="progetto-link">
         <article class="progetto">
           <img src="PNG/Copertina-Rifugio-Altissimo.png" alt="Copertina Rifugio Altissimo" class="progetto-img">
-          <h3>Rifugio Altissimo</h3>
-          <p>Re-design del sito Rifugio Altissimo</p>
+          <h3 data-i18n="proj3_title">Rifugio Altissimo</h3>
+          <p data-i18n="proj3_desc">Re-design del sito Rifugio Altissimo.</p>
         </article>
       </a>
+
     </section>
   </main>
 
   <!-- FOOTER (caricato automaticamente) -->
   <div id="footer-placeholder"></div>
+
+  <script src="js/translations.js"></script>
 </body>
 </html>
