@@ -3,46 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO Base -->
   <meta name="description" content="Contatta Greta Andreolli per progetti UX/UI Design. Soluzioni creative e funzionali adatte alle tue esigenze.">
   <meta name="keywords" content="Contatti, UX Designer, UI Designer, Collaborazioni, Progetti Design">
   <meta name="author" content="Greta Andreolli">
-  
-  <!-- Meta Robots -->
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://andreollidesign-dot.github.io/progetto-sito-personale/contatti.html">
   <meta property="og:title" content="Contatti – Greta Andreolli UX/UI Designer">
   <meta property="og:description" content="Hai un progetto in mente? Contattami per trovare soluzioni creative e funzionali adatte alle tue esigenze.">
-  <meta property="og:image" content="https://andreollidesign-dot.github.io/progetto-sito-personale/img/immagine-open-graph.jpg">
+  <meta property="og:image" content="https://andreollidesign-dot.github.io/progetto-sito-personale/img/immagine-open-graph2.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="it_IT">
-  
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://andreollidesign-dot.github.io/progetto-sito-personale/contatti.html">
   <meta name="twitter:title" content="Contatti – Greta Andreolli">
   <meta name="twitter:description" content="Contattami per progetti UX/UI Design.">
-  <meta name="twitter:image" content="https://andreollidesign-dot.github.io/progetto-sito-personale/img/immagine-open-graph.jpg">
-  
-  <!-- LinkedIn specifico -->
+  <meta name="twitter:image" content="https://andreollidesign-dot.github.io/progetto-sito-personale/img/immagine-open-graph2.jpg">
+
   <meta property="og:site_name" content="Greta Andreolli Portfolio">
-  
   <title>Contatti – Greta Andreolli UX/UI Designer</title>
-  
-  <!-- Canonical URL -->
+
   <link rel="canonical" href="https://andreollidesign-dot.github.io/progetto-sito-personale/contatti.html">
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Icone
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
   <!-- CSS -->
   <link rel="stylesheet" href="CSS/1-variables.css">
@@ -53,19 +45,13 @@
   <link rel="stylesheet" href="CSS/6-contatti.css">
 
   <!-- Favicon -->
-  <!-- Favicon universale -->
   <link rel="icon" href="PNG/farfalla-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="PNG/farfalla-48.png" sizes="48x48" type="image/png">
-
-  <!-- Apple Touch Icon (iOS e Safari macOS) -->
   <link rel="apple-touch-icon" sizes="180x180" href="PNG/farfalla-180.png">
-
-  <!-- Safari pinned tab (macOS) -->
   <link rel="mask-icon" href="SVG/farfalla-mask.svg" color="#000000">
 
   <!-- Template Loader -->
   <script src="js/template.js" defer></script>
-
 </head>
 
 <body>
@@ -73,74 +59,71 @@
   <div id="header-placeholder"></div>
 
   <!-- MAIN -->
-<main class="contatti">
-  <section class="form-section">
-    <h1>Contattami</h1>
-    <p>Per trovare soluzioni creative e funzionali adatte alle tue esigenze</p>
+  <main class="contatti">
+    <section class="form-section">
+      <h1 data-i18n="contact_h1">Contattami</h1>
+      <p data-i18n="contact_sub">Per trovare soluzioni creative e funzionali adatte alle tue esigenze</p>
 
-  <form id="contact-form" action="https://formspree.io/f/mjkpnpzz" method="POST" class="contact-form">
+      <form id="contact-form" action="https://formspree.io/f/mjkpnpzz" method="POST" class="contact-form">
 
-  <div class="form-group">
-    <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome" required>
-  </div>
+        <div class="form-group">
+          <label for="nome" data-i18n="contact_nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
 
-  <div class="form-group">
-    <label for="cognome">Cognome</label>
-    <input type="text" id="cognome" name="cognome" required>
-  </div>
+        <div class="form-group">
+          <label for="cognome" data-i18n="contact_cogn">Cognome</label>
+          <input type="text" id="cognome" name="cognome" required>
+        </div>
 
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-  </div>
+        <div class="form-group">
+          <label for="email" data-i18n="contact_email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-  <div class="form-group">
-    <label for="messaggio">Messaggio</label>
-    <textarea id="messaggio" name="messaggio" required></textarea>
-  </div>
+        <div class="form-group">
+          <label for="messaggio" data-i18n="contact_msg">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" required></textarea>
+        </div>
 
-  <button type="submit" class="btn-invia">Invia</button>
-  <p id="form-message" class="form-message"></p>
-  </form>
+        <button type="submit" class="btn-invia" data-i18n="contact_send">Invia</button>
+        <p id="form-message" class="form-message"></p>
 
-  </section>
+      </form>
+    </section>
+  </main>
 
-</main>
+  <script>
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
 
-<script>
-  const form = document.getElementById('contact-form');
-  const formMessage = document.getElementById('form-message');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    formMessage.textContent = "Invio in corso...";
-    formMessage.style.color = "#444";
-
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        formMessage.textContent = "✅ Messaggio inviato con successo!";
-        formMessage.style.color = "green";
-        form.reset();
-      } else {
-        throw new Error("Errore nell'invio");
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      formMessage.textContent = "Invio in corso...";
+      formMessage.style.color = "#444";
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          formMessage.textContent = "✅ Messaggio inviato con successo!";
+          formMessage.style.color = "green";
+          form.reset();
+        } else {
+          throw new Error("Errore nell'invio");
+        }
+      } catch (error) {
+        formMessage.textContent = "❌ Si è verificato un errore. Riprova più tardi.";
+        formMessage.style.color = "red";
       }
-    } catch (error) {
-      formMessage.textContent = "❌ Si è verificato un errore. Riprova più tardi.";
-      formMessage.style.color = "red";
-    }
-  });
-</script>
+    });
+  </script>
 
-<!-- FOOTER (caricato automaticamente) -->
+  <!-- FOOTER (caricato automaticamente) -->
   <div id="footer-placeholder"></div>
-  
+
+  <script src="js/translations.js"></script>
 </body>
 </html>
